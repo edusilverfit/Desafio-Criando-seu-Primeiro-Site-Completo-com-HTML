@@ -1,0 +1,228 @@
+html, body {
+    margin: 0;
+}
+body {
+    background-color: #f1f1f1;
+    display: flex;
+    justify-content: center;
+}
+
+.wrapper {
+    width: 1200px;
+    display: flex;
+    margin: 0 auto;
+}
+.main {
+    display: flex;
+    flex-flow: column;
+    width: 85%;
+}
+.menu {
+    width: 15%;
+    background: linear-gradient(180deg, #2c3e50 0%, #34495e 100%);
+    padding: 0;
+    border-right: 4px solid #3498db;
+    min-height: 100vh;
+    position: sticky;
+    top: 0;
+}
+
+.menu-header {
+    background-color: rgba(52, 152, 219, 0.1);
+    padding: 20px 15px;
+    border-bottom: 2px solid #3498db;
+    text-align: center;
+}
+
+.menu-header h2 {
+    color: #3498db;
+    margin: 0;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.menu-list {
+    list-style: none;
+    padding: 20px 0;
+    margin: 0;
+}
+
+.menu-list li {
+    margin: 0;
+    border-bottom: 1px solid rgba(52, 152, 219, 0.2);
+}
+
+.menu-link {
+    display: block;
+    padding: 15px 20px;
+    color: #ecf0f1;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    font-weight: 500;
+    font-size: 14px;
+    border-left: 4px solid transparent;
+}
+
+.menu-link:hover {
+    background-color: rgba(52, 152, 219, 0.2);
+    color: #3498db;
+    border-left-color: #3498db;
+    padding-left: 25px;
+}
+
+.menu-link.active {
+    background-color: rgba(52, 152, 219, 0.3);
+    color: #3498db;
+    border-left-color: #3498db;
+    font-weight: 600;
+}
+.header {
+    background: linear-gradient(135deg, #3498db 0%, #2980b9 100%);
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+    border-bottom: 4px solid #2c3e50;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    margin-bottom: 20px;
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 32px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.header h2 {
+    margin: 0;
+    font-size: 28px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+.content {
+    background-color: white;
+    min-height: 300px;
+    padding: 20px;
+}
+.footer {
+    background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+    color: #ecf0f1;
+    padding: 40px 20px 20px;
+    margin-top: 30px;
+    border-top: 4px solid #3498db;
+}
+
+.footer-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto 30px;
+}
+
+.footer-section h3 {
+    color: #3498db;
+    margin-bottom: 15px;
+    font-size: 16px;
+    font-weight: 600;
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 10px;
+}
+
+.footer-section p {
+    line-height: 1.6;
+    font-size: 14px;
+    margin: 5px 0;
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-links li {
+    margin: 8px 0;
+}
+
+.footer-links a {
+    color: #ecf0f1;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    font-size: 14px;
+}
+
+.footer-links a:hover {
+    color: #3498db;
+    text-decoration: underline;
+}
+
+.footer-bottom {
+    background-color: rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    text-align: center;
+    border-top: 1px solid rgba(52, 152, 219, 0.3);
+    font-size: 13px;
+    color: #bdc3c7;
+}
+
+/* Table Styles */
+.blueTable {
+    width: 100%;
+    max-width: 900px;
+    margin: 20px auto;
+    border-collapse: collapse;
+    background-color: white;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.blueTable thead {
+    background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+    color: white;
+}
+
+.blueTable thead tr th {
+    padding: 16px 20px;
+    text-align: left;
+    font-weight: 600;
+    font-size: 15px;
+    border-bottom: 3px solid #3498db;
+    letter-spacing: 0.5px;
+}
+
+.blueTable tbody tr {
+    border-bottom: 1px solid #ecf0f1;
+    transition: all 0.3s ease;
+}
+
+.blueTable tbody tr:nth-child(odd) {
+    background-color: rgba(52, 152, 219, 0.05);
+}
+
+.blueTable tbody tr:hover {
+    background-color: rgba(52, 152, 219, 0.15);
+    transform: translateX(4px);
+}
+
+.blueTable tbody tr td {
+    padding: 14px 20px;
+    font-size: 14px;
+    color: #2c3e50;
+}
+
+.blueTable tbody tr td:first-child {
+    font-weight: 600;
+    color: #3498db;
+}
+
+.blueTable tfoot {
+    background-color: rgba(52, 152, 219, 0.05);
+    border-top: 2px solid #3498db;
+}
+    font-size: 13px;
+    color: #bdc3c7;
+}
